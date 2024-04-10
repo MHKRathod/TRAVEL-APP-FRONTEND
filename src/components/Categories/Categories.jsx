@@ -20,7 +20,7 @@ export const Categories = () => {
     (async () => {
       try {
         const { data } = await axios.get(
-          "https://travelapp.cyclic.app/api/category"
+          "https://apptravel-36748aa3fc07.herokuapp.com/api/categorydata"
         );
         setCategories(data);
       } catch (err) {

@@ -3,7 +3,8 @@ import axios from "axios";
 export const signupHandler = async (username, number, email, password, setAlert) => {
   try {
     const data = await axios.post(
-      "https://travelapp.cyclic.app/api/auth/register",
+      // "https://travelapp.cyclic.app/api/auth/register",
+      `https://apptravel-36748aa3fc07.herokuapp.com/api/auth/register`,
       {
         username: username,
         number: number,
