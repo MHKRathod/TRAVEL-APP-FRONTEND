@@ -46,7 +46,7 @@ export const Home = () => {
     (async () => {
       try {
         const { data } = await axios.get(
-          `https://apptravel-36748aa3fc07.herokuapp.com/api/hotels?category=${hotelCategory}`
+          `http://localhost:3500/api/hotels?category=${hotelCategory}`
         );
 
         setTestData(data);

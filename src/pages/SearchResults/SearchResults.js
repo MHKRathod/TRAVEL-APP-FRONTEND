@@ -14,7 +14,7 @@ export const SearchResults = () => {
       try {
         const { data } = await axios.get(
           // `https://travelapp.cyclic.app/api/hotels?category=${hotelCategory}`
-          `https://apptravel-36748aa3fc07.herokuapp.com/api/hotels?category=${hotelCategory}`
+          `http://localhost:3500/api/hotels?category=${hotelCategory}`
         );
         setHotels(data);
       } catch (err) {

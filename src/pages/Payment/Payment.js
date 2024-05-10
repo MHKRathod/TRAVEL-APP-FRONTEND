@@ -27,7 +27,7 @@ export const Payment = () => {
       try {
         const { data } = await axios.get(
           // `https://travelapp.cyclic.app/api/hotels/${id}`
-          `https://apptravel-36748aa3fc07.herokuapp.com/api/hotels?${id}`
+          `http://localhost:3500/api/hotels?${id}`
         );
         setSingleHotel(data);
       } catch (err) {
